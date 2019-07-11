@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+
+import Divider from "@material-ui/core/Divider";
+import Container from "@material-ui/core/Container";
+
 import "./App.css";
+import DropDownFilter from "../dropdownfilter/DropDownFilter.js";
+import Playlist from "../playlist/Playlist.js";
+import Track from "../track/Track.js";
 
 let fakeServerData = {
   user: {
@@ -40,55 +47,18 @@ let fakeServerData = {
   }
 };
 
-const Divider = ({ color }) => (
-  <hr
-    style={{
-      color: "#F8EED6",
-      backgroundColor: "#F8EED6",
-      height: 1
-    }}
-  />
-);
-
-class Track extends React.Component {
-  render() {
-    const track = this.props.track;
-    return (
-      <tr>
-        <td>{track.title}</td>
-        <td>{track.artist}</td>
-        <td>{track.album}</td>
-        <td>{track.time}</td>
-      </tr>
-    );
-  }
-}
-
-class Playlist extends React.Component {
-  render() {
-    return (
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Artist</th>
-            <th>Album</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        <tbody />
-      </table>
-    );
-  }
-}
-
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>neue</h1>
-        <Playlist tracks={this.props.tracks} />
-      </div>
+      <Container maxWidth="75%">
+        <div>
+          <h1 className="title">neue.</h1>
+          <hr className="line" />
+          <DropDownFilter />
+          <hr className="line" />
+          <Playlist tracks={this.props.tracks} />
+        </div>
+      </Container>
     );
   }
 }

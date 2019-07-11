@@ -1,0 +1,26 @@
+html,
+body {
+  background-color: #f2f2f2;
+}
+
+.title {
+  position: relative;
+  left: 3%;
+  right: 85.79%;
+  top: 3.05%;
+  bottom: 89.77%;
+  font-family: SofiaProBold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: left;
+  letter-spacing: 5.41667px;
+  color: #d1775d;
+}
+
+.line {
+  left: 3.47%;
+  right: 3.47%;
+  top: 18.07%;
+  bottom: 81.63%;
+  border: 0.4px solid #979797;
+}
