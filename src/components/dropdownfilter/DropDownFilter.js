@@ -6,11 +6,11 @@ import "./DropDownFilter.css";
 
 const menu = (
   <Menu>
-    <Menu.Item key="0">
-      <a className="ant-dropdown-link">LAST 6 MONTHS</a>
+    <Menu.Item className="menu-item" key="0">
+      <a className="link">LAST 6 MONTHS</a>
     </Menu.Item>
-    <Menu.Item key="1">
-      <a className="ant-dropdown-link">LAST 9 MONTHS</a>
+    <Menu.Item className="menu-item" key="1">
+      <a className="link">LAST 9 MONTHS</a>
     </Menu.Item>
   </Menu>
 );
