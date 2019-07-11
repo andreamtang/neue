@@ -26,6 +26,12 @@ code {
 }
 
 @font-face {
+  font-family: "SofiaProRegular";
+  src: local("SofiaProRegular"),
+    url("./assets/fonts/Sofia Pro Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "SofiaProLight";
   src: local("SofiaProLight"),
     url("./assets/fonts/Sofia Pro Light.ttf") format("truetype");

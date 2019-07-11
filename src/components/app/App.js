@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-import Divider from "@material-ui/core/Divider";
 import Container from "@material-ui/core/Container";
 
 import "./App.css";
@@ -53,9 +52,9 @@ class App extends React.Component {
       <Container maxWidth="75%">
         <div>
           <h1 className="title">neue.</h1>
-          <hr className="line" />
+          <hr className="divider" />
           <DropDownFilter />
-          <hr className="line" />
+          <hr className="divider" />
           <Playlist tracks={this.props.tracks} />
         </div>
       </Container>

@@ -1,7 +1,12 @@
-.Menu {
+.menu {
+  padding: 30px;
+}
+
+.ant-dropdown-link {
+  padding: 10px;
+  font-family: SofiaProRegular;
   width: 188.8px;
   height: 20px;
-  font-family: SofiaProLight;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -9,4 +14,8 @@
   line-height: normal;
   letter-spacing: 4px;
   color: #2a2a2a;
+}
+
+.ant-dropdown-link:hover {
+  color: #d1775d;
 }

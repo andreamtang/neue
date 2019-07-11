@@ -11,16 +11,14 @@ body {
   bottom: 89.77%;
   font-family: SofiaProBold;
   font-size: 48px;
-  line-height: 56px;
   text-align: left;
   letter-spacing: 5.41667px;
   color: #d1775d;
+  padding-top: 25px;
 }
 
-.line {
-  left: 3.47%;
-  right: 3.47%;
-  top: 18.07%;
-  bottom: 81.63%;
+.divider {
   border: 0.4px solid #979797;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
