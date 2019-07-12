@@ -1,0 +1,35 @@
+html,
+body {
+  background-color: #F5F4F0;
+}
+
+h1.title {
+  position: relative;
+  left: 3%;
+  right: 85.79%;
+  top: 3.05%;
+  bottom: 89.77%;
+  font-family: SofiaProBold;
+  font-size: 48px;
+  text-align: left;
+  letter-spacing: 5.41667px;
+  color: #d1775d;
+  padding-top: 25px;
+}
+
+h2.profilename {
+  position: relative;
+  left: 88.07%;
+  right: 5.34%;
+  top: 7%;
+  bottom: 90.03%;
+  font-family: Sofia Pro;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #2A2A2A;
+}
+
+section {
+  display: inline-block;
+
+}

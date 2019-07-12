@@ -5,6 +5,7 @@ import Container from "@material-ui/core/Container";
 
 import "./App.css";
 import DropDownFilter from "../dropdownfilter/DropDownFilter.js";
+import HeaderSection from "../headersection/HeaderSection.js";
 import Playlist from "../playlist/Playlist.js";
 import Track from "../track/Track.js";
 
@@ -51,7 +52,7 @@ class App extends React.Component {
     return (
       <Container maxWidth="75%">
         <div>
-          <h1 className="title">neue.</h1>
+          <HeaderSection />
           <hr className="divider" />
           <DropDownFilter />
           <hr className="divider" />
