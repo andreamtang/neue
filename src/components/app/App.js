@@ -16,7 +16,9 @@ class App extends React.Component {
         <div>
           <HeaderSection />
           <hr className="divider" />
+          <div className="padding">
           <DropDownFilter />
+          </div>
           <hr className="divider" />
           <Playlist tracks={this.props.tracks} />
         </div>
