@@ -1,14 +1,10 @@
 .playlistColumnHeaders {
-  position: relative;
-  left: 4.17%;
-  right: 91.6%;
-  top: 21.78%;
-  bottom: 76.02%;
-  width: 30.5;
-  height: 9.9;
+  position: relative; 
   font-family: SofiaProLight;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 4px;
+  margin-bottom: 20px;
+  margin-top: 5px;
   color: #a0a0a0;
 }

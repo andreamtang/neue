@@ -18,7 +18,7 @@ const menu = (
 class DropDownFilter extends React.Component {
   render() {
     return (
-      <Dropdown className="filterMenu" overlay={menu} trigger={["click"]}>
+      <Dropdown overlay={menu} trigger={["click"]}>
         <a className="ant-dropdown-link" href="#">
           LAST 3 MONTHS <Icon type="down" />
         </a>

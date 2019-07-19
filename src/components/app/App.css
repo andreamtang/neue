@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #ffffff;
+  background-color: rgb(189, 189, 189);
 }
 
 .title {
@@ -19,6 +19,9 @@ body {
 
 .divider {
   border: 0.4px solid #979797;
-  margin-bottom: 20px;
-  margin-top: 20px;
+}
+
+.padding {
+  padding-top: 15px;
+  padding-bottom: 10px;
 }

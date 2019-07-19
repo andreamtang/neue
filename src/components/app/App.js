@@ -9,52 +9,16 @@ import HeaderSection from "../headersection/HeaderSection.js";
 import Playlist from "../playlist/Playlist.js";
 import Track from "../track/Track.js";
 
-let fakeServerData = {
-  user: {
-    name: "Andrea",
-    songs: [
-      {
-        time: "4:37",
-        title: "VIVID DREAMS (feat. River Tiber)",
-        artist: "KAYTRANADA, River Tiber",
-        album: "99.9%"
-      },
-      {
-        time: "1:50",
-        title: "Basement Jack",
-        artist: "Steve Lacy",
-        album: "Apollo XXI"
-      },
-      {
-        time: "3:42",
-        title: "Small Worlds",
-        artist: "Mac Miller",
-        album: "Swimming"
-      },
-      {
-        time: "4:19",
-        title: "Snakes (feat. T'nah Apex)",
-        artist: "Joey Bada$$, T'nah Apex",
-        album: "1999"
-      },
-      {
-        time: "5:07",
-        title: "Nights",
-        artist: "Frank Ocean",
-        album: "Blonde"
-      }
-    ]
-  }
-};
-
 class App extends React.Component {
   render() {
     return (
-      <Container maxWidth="75%">
+      <Container className="App" maxWidth="75%">
         <div>
           <HeaderSection />
           <hr className="divider" />
+          <div className="padding">
           <DropDownFilter />
+          </div>
           <hr className="divider" />
           <Playlist tracks={this.props.tracks} />
         </div>
@@ -63,9 +27,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <App tracks={fakeServerData} />,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 export default App;

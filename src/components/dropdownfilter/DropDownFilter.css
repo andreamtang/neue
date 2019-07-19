@@ -1,11 +1,12 @@
 .menu-item {
   font-family: SofiaProRegular;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 18px;
+  padding: 8px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 16px;
   letter-spacing: 4px;
   color: #4f4f4f;
+  text-align: center;
 }
 
 .menu-item:hover {
@@ -17,14 +18,14 @@
 }
 
 .ant-dropdown-link {
-  padding: 10px;
+  padding-left: 15px;
   font-family: SofiaProRegular;
   height: 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
+  line-height: 22px;
   letter-spacing: 4px;
   color: #2a2a2a;
 }
