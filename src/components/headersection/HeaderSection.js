@@ -4,6 +4,7 @@ import "./HeaderSection.css";
 import { Button, Menu, Dropdown, Icon } from "antd";
 import "antd/dist/antd.css";
 import { Avatar } from 'antd';
+import App from "../app/App.js";
 
 
 
@@ -15,6 +16,14 @@ const menu = (
 
 
 class HeaderSection extends React.Component {
+
+  const disname = this.getDisplayName();
+
+  getDisplayName() {
+    spotifyApi.getME()
+    .then(response => return response.item.display_name)
+  }
+
   render () {
     return (
       <div class="header">
@@ -25,9 +34,12 @@ class HeaderSection extends React.Component {
           <div className="profile_container">
           <Avatar className="avatar" src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
           <Dropdown overlay={menu}>
-            <a className="profilename" href="#">Andrea Tang <Icon type="down"/>
+            <a className="profilename" href="#"> display_name <Icon type="down"/>
             </a>
           </Dropdown>
+          <div>
+          <a href='http://localhost:8888'> Login to Spotify </a>
+          </div>
             </div>
         </div>
       </div>
